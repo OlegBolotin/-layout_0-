@@ -1,0 +1,700 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+
+html,
+body {
+	overflow-x: hidden;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	display: block;
+	position: absolute;
+	width: 100%;
+	min-height: 700px;
+	min-width: 960px;
+}
+/* стили шапки сайта */
+header{
+  margin: 0px;
+  padding: 0px;
+  height: 90px;
+	/* display: inline-block; */
+}
+nav {
+}
+
+/* стили логотипа */
+#logo {
+	float: left;
+	margin-top: 20px;
+  margin-left: 135px;
+  border: 0px;
+	padding: 0px;
+}
+
+#menu {
+	margin-left: 316px;
+}
+ul {
+	display: inline-block; /* всё в одну стороку */
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top: 25px; /*делаем отступ сверху*/
+  background: white; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background: white; /*добавляем фон к пункту меню*/
+  color: black; /*меняем цвет ссылок*/
+  padding: 0px 30px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block;
+  /* border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+a:hover {
+	color: green;
+	margin-top: 10px;
+}
+li {
+	/* color: red; */
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position: relative; /*задаем позицию для позиционирования*/
+}
+
+/*Стили для скрытого выпадающего меню*/
+li > ul {
+  position:absolute;
+  top:25px;
+  display:none;
+}
+
+/*Делаем скрытую часть видимой*/
+li:hover > ul {
+  display: block;
+  width:250px;  /*Задаем ширину выпадающего меню*/
+}
+
+li:hover > ul > li {
+  float:none; /*Убираем горизонтальное позиционирование*/
+}
+
+#login {
+  display: inline-block;
+	background: #2c67b1;
+	position: absolute;
+	margin-top: 25px;
+	word-spacing: 10px;
+	font-size: 25px;
+}
+
+.bluee {
+	position: relative;
+	width: 100%; /* for IE 6 */
+}
+
+#viewimg {
+	width: 100%;
+}
+#wave {
+	margin-left: 0px;
+	margin-top: 360px;
+  font-size: 60px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+h1 {
+	margin-left: 360px;
+	margin-top: 100px;
+  font-size: 60px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+h1 span  {
+	color: white;
+	/* font: bold 24px/45px Helvetica, Sans-Serif; */
+	/* letter-spacing: -1px; */
+	/* background: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+	/* background: rgba(0, 0, 0, 0.7); */
+	/* padding: 10px; */
+}
+
+/* Оформление BLUETOOTH LOW ENERGY */
+#blue {
+	margin-left: 310px;
+	margin-top: 170px;
+	position: absolute;
+	font-size: 15px;
+	top	: 200px;
+	left: 0;
+	width: 50%;
+}
+
+#blue span {
+	padding: 10px;
+	background-color: white;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #172592;
+}
+
+/* Оформление TECHNOLOGY */
+#tech {
+	margin-left: 365px;
+	margin-top: 200px;
+	font-size: 15px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+#tech span {
+	color: white;
+
+}
+/* Оформление ук.знака */
+#signpost {
+	margin-left: 710px;
+	margin-top: 0px;
+  font-size: 60px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	/* width: 100%; */
+}
+
+/*  Оформление надписиси рядом с #signpost */
+#new_avenue {
+	color: white;
+	margin-left: 760px;
+	margin-top: 5px;
+  font-size: 20px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+/* Оформление значка куманикации */
+#comm {
+	margin-left: 710px;
+	margin-top: 120px;
+	font-size: 60px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+
+/* Оформление текста рядом с #comm */
+#creat {
+	color: white;
+	margin-left: 760px;
+	margin-top: 120px;
+	font-size: 20px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+/* Оформление знача земли */
+#earth_logo {
+	margin-left: 710px;
+	margin-top: 232px;
+	font-size: 60px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+
+/* Оформление текста рядом с #earth_logo */
+#actual {
+	color: white;
+	margin-left: 760px;
+	margin-top: 232px;
+  font-size: 20px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+.phone {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+/* Оформление картинки #phonee */
+#phonee{
+	/* position: absolute;
+	width: 100% */
+}
+/* Оформление текста рядом с #imgphone */
+#our {
+	color: #3c3c3c;
+	margin-left: 900px;
+	margin-top: 700px;
+  font-size: 20px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+#bot {
+	color: #3c3c3c;
+	margin-left: 900px;
+	margin-top: 720px;
+  font-size: 50px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+#text {
+	color: #a0a0a0;
+	margin-left: 900px;
+	margin-top: 780px;
+  font-size: 15px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+/* Оформление кнопки */
+#view {
+	width: 200px;
+  height: 50px;
+	background-color: #f4213a;
+	color: white;
+	margin-left: 1100px;
+	margin-top: 850px;
+	font-size: 15px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+
+.funct {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+/* Офррмление картинки рядом с #you */
+#inbox{
+	position: absolute;
+	margin-top: 11.5%;
+	margin-left: 18%;
+}
+
+/* Оформление текста */
+#admin{
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 20%;
+}
+
+/* Оформление картинки радом с #admin */
+#rel{
+	position: absolute;
+	margin-left: 18%;
+	margin-top: 3%;
+}
+
+/* Оформление текста */
+#you{
+	position: absolute;
+	margin-top: 11%;
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 10px;
+	margin-left: 20%;
+}
+
+/* Оформление текста  */
+#empl{
+	display: block;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 20%;
+}
+
+/* Оформление картнки рядом с #empl */
+#clock{
+  position: absolute;
+	margin-left: 18%;
+	margin-top: 20%;
+}
+
+/* Оформление картинки #main */
+ #main {
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 25%;
+	width: 1015px;
+}
+
+.iphonehand{
+  margin: 0;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+}
+
+#bgig{
+	position: absolute;
+	width: 100%;
+	margin-top: 35%;
+}
+
+#back_bgig{
+	width: 120%;
+	margin-top: 37%;
+}
+
+#down{
+	position: absolute;
+	margin-top: 57%;
+	margin-left: 70%;
+	color: white;
+	font-size: 40px;
+}
+
+#better{
+	position: absolute;
+	margin-top: 62%;
+	margin-left: 70%;
+	font-size: 20px;
+	text-align: right;
+	color: #e0e7fc;
+}
+
+#gp{
+	position: absolute;
+	margin-top: 70%;
+	margin-left: 70%;
+}
+#as{
+	position: absolute;
+	margin-top: 70%;
+	margin-left: 85%;
+}
+
+.content{
+	margin-top: 90%;
+}
+
+#backgroundimg{
+	position: absolute;
+	margin-top: 37%;
+	margin-left: 0%;
+}
+
+/* Оформление блока новости */
+.news{
+	padding: 0px;
+	margin-top: 90%;
+	/* margin-left: 0%; */
+}
+/* Оформление первой картинки */
+#net{
+	position: absolute;
+  margin-left: 2%;
+	margin-top: 20%;
+}
+/* Оформление текста под первой картинкой */
+#whyshould{
+	position: absolute;
+	margin-top: 48%;
+	margin-left: 4%;
+	padding: 10px;
+	padding-right: 2.55%;
+	color: black;
+	background-color: white;
+	font-size: 1.2em;
+}
+
+/* Оформление заголовка под первой картинкой */
+#why{
+	position: absolute;
+	margin-top: 43.5%;
+	margin-left: 4%;
+	background-color: white;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 0.5%;
+}
+
+/* Оформление второй картинки */
+#coat{
+	position: absolute;
+	margin-left: 31%;
+	margin-top: 21.5%;
+}
+
+/* Оформление заголовка под второй картинкой */
+#homeland{
+	position: absolute;
+	margin-top: 42%;
+	margin-left: 36%;
+	padding-top: 2.5%;
+	/* padding-left: 1.1%; */
+	padding-right: 1.05%;
+	color: black;
+	background-color: white;
+}
+
+/* Оформление текста под второй картинкой */
+#thedepartment{
+	position: absolute;
+	background: white;
+	margin-top: 48%;
+	margin-left: 36%;
+	padding-top: 1%;
+	padding-bottom: 0.6%;
+	color: black;
+	background-color: white;
+	font-size: 1.2em;
+}
+
+/* Оформление 3 картинки */
+#lock{
+	position: absolute;
+	margin-left: 65%;
+	margin-top: 20%;
+}
+
+/* Оформление заголовка под 3 картинкой */
+#lot{
+	position: absolute;
+	margin-top: 41%;
+	margin-left: 67%;
+	padding-top: 2.5%;
+	/* padding-left: 1.1%; */
+	padding-right: 1.05%;
+	color: black;
+	background-color: white;
+}
+
+/* Оформление текста под 3 картинкой */
+#is{
+	position: absolute;
+	background: white;
+	margin-top: 47%;
+	margin-left: 67%;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+	color: black;
+	background-color: white;
+	font-size: 1.2em;
+}
+
+.feedback{
+}
+
+#con{
+	position: absolute;
+	margin-left: 33%;
+	margin-top: 230%;
+	color: white;
+}
+
+#contact_us{
+	position: absolute;
+	margin-top: 26%;
+	color: #a3a3ad;
+	font-size: 20px;
+	margin-left: 28%;
+}
+
+#customer{
+	position: absolute;
+	margin-top: 28%;
+	color: #a3a3ad;
+	font-size: 20px;
+	margin-left: 39%;
+}
+
+#overlay{
+	position: absolute;
+	margin-top: 62%;
+}
+
+#blue_up{
+  margin-top: 62%;
+}
+
+::-webkit-input-placeholder {
+  text-align:center;
+  font-size: 1em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;
+	 font-size: 1em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;
+	 font-size: 1em;
+}
+
+:-ms-input-placeholder {
+   text-align:center;
+	 font-size: 1em;
+}
+
+#name{
+	position: absolute;
+	color: #a4a4a4;
+  margin-top: 35%;
+	margin-left: 25%;
+	width: 22%;
+	height: 1.5%;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+#email{
+	position: absolute;
+	color: #a4a4a4;
+	margin-top: 35%;
+	margin-left: 49%;
+	width: 22%;
+	height: 1.5%;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+#message{
+	position: absolute;
+	color: #a4a4a4;
+	margin-top: 40%;
+	margin-left: 28%;
+	width: 40%;
+	height: 8%;
+	border-radius: 5px;
+	font-size: 1.2em;
+  resize: none;
+}
+
+#send{
+	position: absolute;
+	background-color: #0000ff;
+	color: white;
+	width: 7%;
+	height: 1%;
+	margin-top: 58.5%;
+	margin-left: 44%;
+	border: 1px solid #fff;
+	border-color: white;
+}
+
+footer {
+	position: absolute;
+  background-color: #42b549;
+	margin-top: 73%;
+	width: 100%;
+	height: 150px;
+}
+
+/* Первый столбик подвала */
+ul#company {
+	border-color: none;
+	position: absolute;
+  display: flex;
+	flex-flow: column;
+	background: none;
+	margin-left: 10%;
+}
+
+#company li {
+	color: white;
+	font-size: 1.07em;
+}
+
+/* Второй столбик подвала */
+ul#products{
+	border-color: none;
+	position: absolute;
+  display: flex;
+	flex-flow: column;
+	background: none;
+	margin-left: 30%;
+}
+
+#products li{
+	color: white;
+	font-size: 1.07em;
+}
+
+/* Третий столбик подвала */
+ul#other{
+	border-color: none;
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	background: none;
+	margin-left: 50%;
+}
+
+#other li{
+	color: white;
+	font-size: 1.07em;
+}
+
+/* Четвёртый столбик подвала */
+ul#fourth{
+	border-color: none;
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	background: none;
+	margin-left: 70%;
+}
+
+#fourth li{
+	color: white;
+	font-size: 1.07em;
+	line-height: 25px;
+}
+
+#ph{
+	margin-left: 68%;
+	margin-top: 2%;
+}
+
+#em{
+	margin-left: 68%;
+	margin-top: 1.3%;
+}
+
+#loc{
+	margin-left: 68%;
+	margin-top: 0.9%;
+}
